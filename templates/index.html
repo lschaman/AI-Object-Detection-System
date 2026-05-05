@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Upload Image for Detection</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <button type="submit">Upload</button>
+</form>
+
+{% if image %}
+    <h3>Result:</h3>
+    <img src="{{ image }}" width="500">
+{% endif %}
+
+</body>
+</html>
