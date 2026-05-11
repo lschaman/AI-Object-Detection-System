@@ -1,157 +1,45 @@
-🚀 CNNVision — CNN Based Object Detection System
+# 🚀 CNNVision — CNN Based Object Detection System
 
-AI-powered Object Detection system using CNN and OpenCV.
-Detects real-time objects from webcam/images/videos using Deep Learning.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=CNN+Based+Object+Detection;Real-Time+AI+Detection+System;TensorFlow+%7C+OpenCV+%7C+Deep+Learning" />
+</p>
 
-Stack: Python + TensorFlow/Keras + OpenCV + NumPy + Flask/FastAPI (optional)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/TensorFlow-AI-orange?style=for-the-badge&logo=tensorflow">
+  <img src="https://img.shields.io/badge/OpenCV-ComputerVision-green?style=for-the-badge&logo=opencv">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+</p>
 
-⚡ One-Click Start
-Windows
-double-click start.bat
-Mac / Linux
-chmod +x start.sh && ./start.sh
+---
 
-Then open:
+## 🎯 Live Detection Demo
 
-http://localhost:5000
-🛠️ Manual Setup (Step by Step)
-📌 Prerequisites — Install Once
-Tool	Download	Why
-Python 3.10+	https://python.org
-	Run AI backend
-VS Code	https://code.visualstudio.com
-	Code editor
-Git	https://git-scm.com
-	GitHub upload
-Node.js (Optional)	https://nodejs.org
-	Frontend UI
-📂 Terminal Setup
-1️⃣ Clone Repository
-git clone https://github.com/yourusername/cnn-object-detection.git
-cd cnn-object-detection
-2️⃣ Create Virtual Environment
-Windows
-python -m venv venv
-venv\Scripts\activate
-Mac/Linux
-python3 -m venv venv
-source venv/bin/activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Run the Project
-python app.py
+<p align="center">
+  <img src="assets/demo.gif" width="800"/>
+</p>
 
-OR
+---
 
-python detect.py
-📁 Project Structure
-cnn-object-detection/
-│
-├── start.bat
-├── start.sh
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── dataset/
-│   ├── train/
-│   ├── test/
-│   └── validation/
-│
-├── model/
-│   ├── cnn_model.h5
-│   └── labels.txt
-│
-├── outputs/
-│   ├── images/
-│   └── videos/
-│
-├── app/
-│   ├── app.py
-│   ├── detect.py
-│   ├── train.py
-│   ├── predict.py
-│   └── utils.py
-│
-└── frontend/        ← Optional React frontend
-🧠 Features
+## 📌 Features
 
 ✅ Real-Time Object Detection
-✅ Webcam Detection
-✅ Image Detection
-✅ Video Detection
 ✅ CNN Deep Learning Model
 ✅ OpenCV Integration
-✅ Fast Prediction
-✅ Easy Training Pipeline
+✅ Webcam Detection
+✅ Image & Video Prediction
+✅ Fast & Accurate Results
 
-🔧 Train Your Own Model
-python train.py
+---
 
-Dataset structure:
+## 🧠 Technologies Used
 
-dataset/
-   ├── class1/
-   ├── class2/
-   └── class3/
-📸 Detect Objects from Image
-python predict.py --image test.jpg
-🎥 Detect Objects from Webcam
-python detect.py
-🐛 Troubleshooting
-OpenCV Error
-pip install opencv-python
-TensorFlow Error
-pip install tensorflow
-Webcam Not Opening
+* Python
+* TensorFlow / Keras
+* OpenCV
+* NumPy
+* Matplotlib
+* Deep Learning
+* CNN
 
-Change camera index:
-
-cv2.VideoCapture(0)
-
-Try:
-
-cv2.VideoCapture(1)
-📦 requirements.txt
-tensorflow
-opencv-python
-numpy
-matplotlib
-pillow
-scikit-learn
-flask
-🌐 API Endpoints (If Using Flask/FastAPI)
-Method	Endpoint	Description
-POST	/predict	Upload image
-GET	/health	API status
-POST	/detect	Detect object
-📷 Add Project Images in README
-
-Create folder:
-
-assets/
-
-Add screenshots:
-
-assets/demo.png
-assets/output.png
-
-Then in README:
-
-## Demo
-
-![Demo](assets/demo.png)
-📝 .gitignore
-venv/
-__pycache__/
-*.pyc
-model/*.h5
-.env
-🚀 Upload to GitHub
-Initialize Git
-git init
-git add .
-git commit -m "Initial Commit"
-Connect GitHub Repo
-git remote add origin https://github.com/yourusername/cnn-object-detection.git
-git push -u origin main
+---
