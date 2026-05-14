@@ -73,7 +73,8 @@ cd cnnvision
 
 ---
 
-# 🧪 Create Virtual Environment
+<h3>🧪 Create Virtual Environment
+</h3>
 
 ## Windows
 
@@ -254,7 +255,8 @@ python train.py
 
 <h3>🐛 Troubleshooting
 </h3>
-OpenCV Error
+<h3>OpenCV Error
+</h3>
 
 ```bash
 pip install opencv-python
