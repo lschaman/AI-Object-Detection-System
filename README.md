@@ -14,8 +14,8 @@
 
 ---
 
-# 📚 About Project
-
+<h3>📚 About Project
+</h3>
 CNNVision is an AI-powered Real-Time Object Detection System built using Deep Learning and Computer Vision technologies.
 The system detects and classifies objects from webcam, images, and videos using a CNN model.
 
@@ -29,10 +29,8 @@ This project is specially designed for:
 
 ---
 
-# ⚡ One-Click Start
-
-## 🪟 Windows
-
+<h3>⚡ One-Click Start
+</h3>
 Double-click:
 
 ```bash
@@ -41,17 +39,18 @@ start.bat
 
 ---
 
-## 🍎 Mac / Linux
-
+<h3>🍎 Mac / Linux
+</h3>
 ```bash
 chmod +x start.sh && ./start.sh
 ```
 
 ---
 
-# 🛠️ Manual Setup (Step by Step)
-
-## 📌 Install Requirements
+<h2>🛠️ Manual Setup (Step by Step)
+</h2>
+<h3>📌 Install Requirements
+</h3>
 
 | Tool         | Purpose            |
 | ------------ | ------------------ |
@@ -63,7 +62,8 @@ chmod +x start.sh && ./start.sh
 
 ---
 
-# 📂 Clone Repository
+<h3>📂 Clone Repository
+</h3>
 
 ```bash
 git clone https://github.com/yourusername/cnnvision.git
@@ -85,7 +85,8 @@ venv\Scripts\activate
 
 ---
 
-## Mac / Linux
+<h3>Mac / Linux
+</h3>
 
 ```bash
 python3 -m venv venv
@@ -95,7 +96,8 @@ source venv/bin/activate
 
 ---
 
-# 📦 Install Dependencies
+<h3>📦 Install Dependencies
+</h3>
 
 ```bash
 pip install -r requirements.txt
@@ -103,9 +105,11 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run Project
+<h3>▶️ Run Project
+</h3>
 
-## Webcam Detection
+<h3>Webcam Detection
+</h3>
 
 ```bash
 python detect.py
@@ -113,19 +117,17 @@ python detect.py
 
 ---
 
-## Train CNN Model
-
-```bash
+<h3>Train CNN Model
+</h3>
+bash
 python train.py
-```
 
 ---
 
-## Predict from Image
-
-```bash
+<h3>Predict from Image
+</h3>
+bash
 python predict.py --image test.jpg
-```
 
 ---
 
