@@ -41,6 +41,7 @@ start.bat
 
 <h3>🍎 Mac / Linux
 </h3>
+
 ```bash
 chmod +x start.sh && ./start.sh
 ```
@@ -335,20 +336,4 @@ Pull requests are welcome.
 For major changes, please open an issue first.
 
 ---
-
-<h3>⭐ Support
-</h3>
-
-If you like this project:
-
-🌟 Star this repository
-🍴 Fork the project
-📢 Share with friends
-
----
-
-<h3>👨‍💻 Developer
-</h3>
-
-Made with ❤️ using Python, OpenCV & Deep Learning.
 
