@@ -214,7 +214,7 @@ cnnvision/
 ## 🖥️ Detection Output
 
 <p align="center">
-  <img src="assets/output.png" width="850"/>
+  <img src="data/videos/homepage.jpeg" width="850"/>
 </p>
 
 ---
