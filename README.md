@@ -134,12 +134,13 @@ python predict.py --image test.jpg
 # 🎯 Live Detection Demo
 
 <p align="center">
-  <img src="assets/demo.gif" width="850"/>
+  <img src="data/videos/gifj.gif" width="850"/>
 </p>
 
 ---
 
-# ✨ Features
+<h3>✨ Features
+</h3>
 
 ✅ Real-Time Object Detection
 ✅ CNN Deep Learning Architecture
@@ -154,7 +155,8 @@ python predict.py --image test.jpg
 
 ---
 
-# 🧠 Technologies Used
+<h3>🧠 Technologies Used
+</h3>
 
 | Technology       | Usage                |
 | ---------------- | -------------------- |
@@ -167,7 +169,8 @@ python predict.py --image test.jpg
 
 ---
 
-# 📁 Project Structure
+<h3>📁 Project Structure
+</h3>
 
 ```bash
 cnnvision/
@@ -204,7 +207,8 @@ cnnvision/
 
 ---
 
-# 📸 Screenshots
+<h3>📸 Screenshots
+</h3>
 
 ## 🖥️ Detection Output
 
@@ -214,7 +218,8 @@ cnnvision/
 
 ---
 
-# 📊 Model Accuracy
+<h3>📊 Model Accuracy
+</h3>
 
 | Metric          | Result    |
 | --------------- | --------- |
@@ -224,9 +229,11 @@ cnnvision/
 
 ---
 
-# 🔧 Change Classes
+<h3>🔧 Change Classes
+</h3>
 
-Edit dataset folder:
+<h3>Edit dataset folder:
+</h3>
 
 ```bash
 dataset/
@@ -236,7 +243,8 @@ dataset/
    └── car/
 ```
 
-Then retrain:
+<h3>Then retrain:
+</h3>
 
 ```bash
 python train.py
@@ -244,9 +252,9 @@ python train.py
 
 ---
 
-# 🐛 Troubleshooting
-
-## OpenCV Error
+<h3>🐛 Troubleshooting
+</h3>
+OpenCV Error
 
 ```bash
 pip install opencv-python
@@ -254,7 +262,8 @@ pip install opencv-python
 
 ---
 
-## TensorFlow Error
+<h3>TensorFlow Error
+</h3>
 
 ```bash
 pip install tensorflow
@@ -262,7 +271,8 @@ pip install tensorflow
 
 ---
 
-## Webcam Not Opening
+<h3>Webcam Not Opening
+</h3>
 
 Change:
 
@@ -278,7 +288,8 @@ cv2.VideoCapture(1)
 
 ---
 
-# 📦 requirements.txt
+<h3>📦 requirements.txt
+</h3>
 
 ```txt
 tensorflow
@@ -292,7 +303,8 @@ flask
 
 ---
 
-# 🌐 API Endpoints
+<h3>🌐 API Endpoints
+</h3>
 
 | Method | Endpoint | Description     |
 | ------ | -------- | --------------- |
@@ -302,7 +314,8 @@ flask
 
 ---
 
-# 🚀 Future Improvements
+<h3>🚀 Future Improvements
+</h3>
 
 * YOLO Integration
 * Faster GPU Inference
@@ -313,14 +326,16 @@ flask
 
 ---
 
-# 🤝 Contributing
+<h3>🤝 Contributing
+</h3>
 
 Pull requests are welcome.
 For major changes, please open an issue first.
 
 ---
 
-# ⭐ Support
+<h3>⭐ Support
+</h3>
 
 If you like this project:
 
@@ -330,7 +345,8 @@ If you like this project:
 
 ---
 
-# 👨‍💻 Developer
+<h3>👨‍💻 Developer
+</h3>
 
 Made with ❤️ using Python, OpenCV & Deep Learning.
 
