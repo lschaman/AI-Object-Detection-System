@@ -1,14 +1,13 @@
 import numpy as np
 from ultralytics import YOLO
 import cv2
-import cvzone
 import math
 
 # VIDEO CAPTURE
-cap = cv2.VideoCapture("videos/cars.mp4")
+cap = cv2.VideoCapture("videos/new.mp4")
 
 # LOAD YOLO MODEL
-model = YOLO("../yolo-weight/yolov8n.pt")
+model = YOLO("../yolo-weight/yolov8l.pt")
 
 # LOAD MASK
 mask = cv2.imread("mask.png")
@@ -37,10 +36,10 @@ while True:
         break
 
     # APPLY MASK
-    imgRegion = cv2.bitwise_and(img, mask)
+    #imgRegion = cv2.bitwise_and(img, mask)
 
     # YOLO DETECTION
-    results = model(imgRegion, stream=True)
+    results = model(img, stream=True)
 
     for r in results:
 
@@ -70,30 +69,43 @@ while True:
                 or currentClass == "truck"
                 or currentClass == "motorbike"
             ) and conf > 0.3:
+                if currentClass == "car":
+                    color = (0, 255, 0)
+
+                elif currentClass == "truck":
+                    color = (0, 0, 255)
+
+                elif currentClass == "bus":
+                    color = (255, 0, 0)
+
+                else:
+                    color = (0, 255, 255)
+
+                cv2.rectangle(img, (x1, y1), (x2, y2), color, 8)
 
                 # TEXT
-                cvzone.putTextRect(
+                # RECTANGLE
+                #cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
+
+                # TEXT BACKGROUND
+                cv2.rectangle(img, (x1, y1 - 60), (x1 + 250, y1), (255, 0, 255), -1)
+
+                # TEXT
+                cv2.putText(
                     img,
                     f'{currentClass} {conf}',
-                    (max(0, x1), max(35, y1)),
-                    scale=1,
-                    thickness=1,
-                    offset=5
-                )
-
-                # RECTANGLE
-                cvzone.cornerRect(
-                    img,
-                    (x1, y1, w, h),
-                    l=9,
-                    rt=2,
-                    colorR=(255, 0, 255)
+                    (x1 + 5, y1 - 5),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    1.6,
+                    (255, 255, 255),
+                    5
                 )
 
     # SHOW OUTPUT
+    img = cv2.resize(img, (900, 600))
     cv2.imshow("Image", img)
 
-    cv2.imshow("Masked Region", imgRegion)
+    cv2.imshow("Masked Region", img)
 
     # EXIT KEY
     if cv2.waitKey(1) & 0xFF == ord('q'):
